@@ -21,7 +21,7 @@ public class CalculationEvent extends ApplicationEvent {
     }
 
     public String getEvent() {
-        return String.format("a %s b", operation.getSign());
+        return String.format("%s %s %s", a, operation.getSign(), b);
     }
 
 }
